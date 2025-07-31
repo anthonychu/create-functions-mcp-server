@@ -83,7 +83,6 @@ Add the necessary files to run the MCP server as a custom handler in Azure Funct
     }
     ```
 
-
 1. Create a `local.settings.json` file with the following content (select the correct runtime):
     ```json
     {
@@ -115,9 +114,9 @@ Next, modify the `azure.yaml` file to match the runtime/language of the MCP serv
 In the Bicep files, change the function app's name to reflect the MCP server project name.
 
 Also in the Bicep files, change the runtime and runtime version to based on the following rules:
-- For Node.js, use `node` and `22`
-- For Python, use `python` and the version of Python used in the MCP server project (`3.10`, `3.11`, `3.12`, `3.13`)
-- For C#, use `dotnet-isolated` and the version of .NET based on the project (`8.0`, `9.0`, `10.0`)
+- For Node.js, use `node` and `20` or `22`
+- For Python, use `python` and `3.10`, `3.11`, `3.12`, or `3.13`
+- For C#, use `dotnet-isolated` and `8.0`, `9.0`, or `10.0`
 
 Additionally, for Python, add an app setting to the function app:
 - `PYTHONPATH` = `/home/site/wwwroot/.python_packages/lib/site-packages`
