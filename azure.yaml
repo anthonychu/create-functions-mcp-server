@@ -4,7 +4,7 @@ name: mcp-server-azd
 metadata:
   template: mcp-server-azd@1.0.1
 services:
-  api:
+  mcp:
     project: .
     language: csharp
     host: function
