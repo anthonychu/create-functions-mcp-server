@@ -62,7 +62,7 @@ Add the necessary files to run the MCP server as a custom handler in Azure Funct
         - For Python, this would be `python` with the path to the main script. If it's unclear which script to use, look for one that initializes the MCP server (e.g., look for file using `FastMCP`) or ask for help.
         - For C#, this would be `dotnet` with the path to the compiled DLL (e.g., `MyMcpServer.dll`). You do not need to set `workingDirectory` for C#, assume the DLL will be compiled to the root of the project.
 
-1. Create a folder named `function-route` in the root of the MCP server project. Inside the folder, create a file named `function.json` with the following content:
+1. Create a folder named `mcp-handler` in the root of the MCP server project. Inside the folder, create a file named `function.json` with the following content:
     ```json
     {
         "bindings": [
