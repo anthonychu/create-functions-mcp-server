@@ -49,8 +49,7 @@ Add the necessary files to run the MCP server as a custom handler in Azure Funct
                 "workingDirectory": "",
                 "arguments": []
             },
-            "enableForwardingHttpRequest": true,
-            "enableHttpProxyingRequest": true
+            "enableProxyingHttpRequest": true
         }
     }
     ```
